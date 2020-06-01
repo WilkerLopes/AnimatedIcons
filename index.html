@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons animations</title>
+    <link rel="shortcut icon" href="assets/Logo_JJ_Gradiente_128.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/icones.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <ul class="left">
+                        <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                    <a href="#!" class="brand-logo hide-on-small-only">IconsAnimation</a>
+                    <a href="#!" class="brand-logo hide-on-med-and-up">IA</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a disabled href="getStart.html">Get started</a></li>
+                        <li><a href="https://github.com/WilkerLopes">Ver no Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assets/fancy-pants.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="assets/Logo_JJ_Gradiente_128.png"></a>
+                <a href="#name"><span class="white-text name">IconsAnimation</span></a>
+                <a href="#email"><span class="white-text email">wilkerlopes257@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a disabled href="getStart.html">Get started</a></li>
+        <li><a href="https://github.com/WilkerLopes">Ver no Github</a></li>
+    </ul>
+
+    <div class="center">
+        <div class="container">
+
+            <h4>Um pacote de ícones animados gratuitos</h4>
+            <p class="flow-text"> Ícones projetados para uso na web. Completamente code open source, e construido por <a href="https://github.com/WilkerLopes" target="_blank" rel="noopener noreferrer">Wilker Lopes</a>.</p>
+            <p class="observe">Toque nos ícones e veja as animações.</p>
+
+            <div class="search">
+                <input id="iconSearch" type="search" class="searchTerm" placeholder="Qual ícone você quer?">
+                <button type="submit" class="searchButton light">
+                    <ion-icon name="search-outline"></ion-icon>
+               </button>
+            </div>
+
+            <div class="icons">
+                <ul id="iconsList">
+                    <div class="hideName">engrenagem</div>
+                    <li class="icon01" onclick="startAnimations('Gear')">
+                        <svg id="iconsGear" class="boxIcone" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <title>ionicons-v5-q</title>
+                <path d='M262.29,192.31a64,64,0,1,0,57.4,57.4A64.13,64.13,0,0,0,262.29,192.31ZM416.39,256a154.34,154.34,0,0,1-1.53,20.79l45.21,35.46A10.81,10.81,0,0,1,462.52,326l-42.77,74a10.81,10.81,0,0,1-13.14,4.59l-44.9-18.08a16.11,16.11,0,0,0-15.17,1.75A164.48,164.48,0,0,1,325,400.8a15.94,15.94,0,0,0-8.82,12.14l-6.73,47.89A11.08,11.08,0,0,1,298.77,470H213.23a11.11,11.11,0,0,1-10.69-8.87l-6.72-47.82a16.07,16.07,0,0,0-9-12.22,155.3,155.3,0,0,1-21.46-12.57,16,16,0,0,0-15.11-1.71l-44.89,18.07a10.81,10.81,0,0,1-13.14-4.58l-42.77-74a10.8,10.8,0,0,1,2.45-13.75l38.21-30a16.05,16.05,0,0,0,6-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16,16,0,0,0-6.07-13.94l-38.19-30A10.81,10.81,0,0,1,49.48,186l42.77-74a10.81,10.81,0,0,1,13.14-4.59l44.9,18.08a16.11,16.11,0,0,0,15.17-1.75A164.48,164.48,0,0,1,187,111.2a15.94,15.94,0,0,0,8.82-12.14l6.73-47.89A11.08,11.08,0,0,1,213.23,42h85.54a11.11,11.11,0,0,1,10.69,8.87l6.72,47.82a16.07,16.07,0,0,0,9,12.22,155.3,155.3,0,0,1,21.46,12.57,16,16,0,0,0,15.11,1.71l44.89-18.07a10.81,10.81,0,0,1,13.14,4.58l42.77,74a10.8,10.8,0,0,1-2.45,13.75l-38.21,30a16.05,16.05,0,0,0-6.05,14.08C416.17,247.67,416.39,251.83,416.39,256Z' />
+            </svg>
+                    </li>
+
+                    <li class="icon02" onclick="startAnimations('Perfil')">
+                        <div class="hideName">perfil</div>
+                        <div id="iconsPerfil" class="boxIcone">
+                            <div class="circleHead"></div>
+                            <div class="circleBody"></div>
+                        </div>
+                    </li>
+
+                    <li class="icon03" onclick="startAnimations('Home')">
+                        <div class="hideName">home</div>
+                        <div id="iconsHome" class="boxIcone"></div>
+                    </li>
+
+                    <li class="icon04" onclick="startAnimations('Artigo')">
+                        <div class="hideName">artigo</div>
+                        <div id="iconsArtigo" class="boxIcone"></div>
+                    </li>
+
+                    <li class="icon05" onclick="startAnimations('Exercicio')">
+                        <div class="hideName">exerciccio</div>
+                        <div id="iconsExercicio" class="boxIcone"></div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <p class="observe">Em breve novos ícones animados para você!!</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container spaceBetween">
+                <div class="text">
+                    WilkerLopes v0.0.1
+                </div>
+                <div class="btns">
+                    <a class="grey-text text-lighten-4 right" href="https://github.com/WilkerLopes" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="grey-text text-lighten-4 right" href="https://www.instagram.com/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class="grey-text text-lighten-4 right" href="mailto:wilkerlopes257@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+
+        function startAnimations(icon) {
+            $("#icons" + icon).toggleClass("active");
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
