@@ -1,0 +1,199 @@
+:root {
+    --corBase: #000000;
+    --corActive: #000000;
+    --corActiveInvert: #ffffff;
+}
+
+.animated-icons.menor .boxIcone {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.animated-icons .boxIcone {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.animated-icons.maior .boxIcone {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* Engrenagem */
+
+.animated-icons.engrenagem .boxIcone path {
+    margin: 4px auto;
+    fill: none;
+    stroke: var(--corBase);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 32px;
+    transition: all 0.35s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+.animated-icons.engrenagem.active .boxIcone path {
+    stroke: var(--corActive);
+    fill: var(--corActive);
+    transform: rotate(90deg);
+}
+
+
+/* Perfil */
+
+.animated-icons.perfil .boxIcone .circleHead {
+    width: 30%;
+    height: 30%;
+    border: 1.5px solid var(--corBase);
+    margin: 6px auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-icons.perfil .boxIcone .circleHead::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: var(--corBase);
+    transition: all 0.35s;
+}
+
+.animated-icons.perfil .boxIcone .circleBody {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    border: 1.5px solid var(--corBase);
+    margin: 2px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.animated-icons.perfil .boxIcone .circleBody::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: rotate(0);
+    width: 100%;
+    height: 100%;
+    background-color: var(--corBase);
+    transition: all 0.35s;
+}
+
+.animated-icons.perfil.active .circleHead {
+    border: 1.5px solid var(--corActive);
+}
+
+.animated-icons.perfil.active .circleHead::before {
+    width: 150%;
+    height: 150%;
+    background-color: var(--corActive);
+}
+
+.animated-icons.perfil.active .circleBody {
+    border: 1.5px solid var(--corActive);
+}
+
+.animated-icons.perfil.active .circleBody::before {
+    background-color: var(--corActive);
+    top: 0;
+    transform: rotate(90deg);
+}
+
+
+/* Artigos */
+
+.animated-icons.artigo .paper {
+    width: 70%;
+    height: 90%;
+    border: 1.5px solid var(--corBase);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.animated-icons.artigo .paper .boxSup {
+    width: 70%;
+    height: 8px;
+    border: 1.5px solid var(--corBase);
+    position: relative;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5px;
+    transition: all 0.3s;
+}
+
+.animated-icons.artigo .paper .lineTitle {
+    width: 70%;
+    height: 4px;
+    background-color: var(--corBase);
+    position: relative;
+    margin-top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5px;
+    transition: all 0.3s;
+}
+
+.animated-icons.artigo .paper .LineText {
+    width: 70%;
+    height: 2px;
+    background-color: var(--corBase);
+    position: relative;
+    margin-top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5px;
+    transition: all 0.3s;
+}
+
+
+/* */
+
+.animated-icons.artigo.active .paper {
+    border: 1.5px solid var(--corActive);
+    background-color: var(--corActive);
+}
+
+.animated-icons.artigo.active .paper .boxSup {
+    border: 1.5px solid var(--corActiveInvert);
+    margin-top: -3px;
+}
+
+.animated-icons.artigo.active .paper .lineTitle {
+    background-color: var(--corActiveInvert);
+}
+
+.animated-icons.artigo.active .paper .LineText {
+    background-color: var(--corActiveInvert);
+}
+
+.animated-icons.artigo.active .paper .LineText:last-child {
+    width: 40%;
+    background-color: var(--corActiveInvert);
+}
