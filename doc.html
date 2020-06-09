@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons animations</title>
+    <link rel="shortcut icon" href="assets/Logo_JJ_Gradiente_128.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/animatedIcons.css">
+    <link rel="stylesheet" href="css/geral.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <ul class="left">
+                        <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                    <a href="#!" class="brand-logo hide-on-small-only">AnimatedIcons</a>
+                    <a href="#!" class="brand-logo hide-on-med-and-up">IA</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Ícones</a></li>
+                        <li><a class="ativo" href="doc.html">Documentação</a></li>
+                        <li><a href="https://github.com/WilkerLopes">Ver no Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assets/fancy-pants.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="assets/Logo_JJ_Gradiente_128.png"></a>
+                <a href="#name"><span class="white-text name">AnimatedIcons</span></a>
+                <a href="#email"><span class="white-text email">wilkerlopes257@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html">Ícones</a></li>
+        <li><a class="ativo" href="doc.html">Documentação</a></li>
+        <li><a href="https://github.com/WilkerLopes">Ver no Github</a></li>
+    </ul>
+
+    <div class="row banner">
+        <div class="container">
+            <div class="col m8 s10 offset-m2 offset-s1">
+                <h2> AnimatedIcons </h2>
+                <p> Ícones <span class="escrita01">gratuitos</span>, <br> para deixar seu projeto mais <span class="escrita02">interativo</span>!</p>
+                <a href="index.html" class="waves-effect waves-light btn">Ver ícones</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-doc">
+        <div class="row">
+            <div class="col l3 m8 offset-m2 s12 ladoEsq">
+                <div class="box-fixed">
+                    <div class="row">
+                        <div class="search">
+                            <input id="autocomplete-input" class="autocomplete" type="search" class="searchTerm" placeholder="O que você procura?">
+                            <button type="submit" class="searchButton light">
+                                <ion-icon name="search-outline"></ion-icon>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col s12">
+                            <ul>
+                                <li><a href="#inicio">Começando</a></li>
+                                <li><a href="#icones">Icones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l7 m10 offset-m1 s12 ladoDir">
+                <h3 class="title" id="inicio"> Começando </h3>
+                <p> Os ícones que temos estão disponíveis para qualquer projeto que tecnologia WEB, usando JS e CSS. Perfeito para seu site ou WPA.</p>
+                <p> Para ter acesso a todos os ícones, siga os passos. </p>
+                <h5>Github: </h5>
+                <p>Começando na pasta do seu arquivo, estruture sua pasta para receber os arquivos. Modelo de estrutura básicas.</p>
+                <pre>
+my_project
+├── Plugins
+│   └── AnimatedIcon
+│       ├── css
+│       │   └── animatedIcons.css
+│       └── js
+│           └── animatedIcons.js
+└── index.html
+                </pre>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a class="active" href="#opemPastaW">Window</a></li>
+                            <li class="tab col s3"><a href="#opemPastaL">Linux</a></li>
+                            <li class="tab col s3"><a href="#opemPastaM">Mac</a></li>
+                        </ul>
+                    </div>
+                    <div id="opemPastaW" class="col s12">
+                        <div class="boxCode">
+                            <div class="nameArquivo">
+                                Terminal
+                                <div class="btnCopy" onclick="copyToClipboard('#codeP1')">
+                                    <i class="material-icons">
+                                        file_copy
+                                    </i>
+                                </div>
+                            </div>
+                            <div id="codeP1" class="editor">
+                                <ol>
+                                    <li class="identt1 terminal">cd /c/user/my_project</li>
+                                    <li class="identt1 terminal">mkdir Plugins</li>
+                                    <li class="identt1 terminal">git clone -b instalar https://github.com/WilkerLopes/AnimatedIcons.git</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="opemPastaL" class="col s12">
+                        <div class="boxCode">
+                            <div class="nameArquivo">
+                                Terminal
+                                <div class="btnCopy" onclick="copyToClipboard('#codeP2')">
+                                    <i class="material-icons">
+                                        file_copy
+                                    </i>
+                                </div>
+                            </div>
+                            <div id="codeP2" class="editor">
+                                <ol>
+                                    <li class="identt1 terminal">cd /home/user/my_project</li>
+                                    <li class="identt1 terminal">mkdir Plugins</li>
+                                    <li class="identt1 terminal">git clone -b instalar https://github.com/WilkerLopes/AnimatedIcons.git</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="opemPastaM" class="col s12">
+                        <div class="boxCode">
+                            <div class="nameArquivo">
+                                Terminal
+                                <div class="btnCopy" onclick="copyToClipboard('#codeP3')">
+                                    <i class="material-icons">
+                                        file_copy
+                                    </i>
+                                </div>
+                            </div>
+                            <div id="codeP3" class="editor">
+                                <ol>
+                                    <li class="identt1 terminal">cd /Users/user/my_project</li>
+                                    <li class="identt1 terminal">mkdir Plugins</li>
+                                    <li class="identt1 terminal">git clone -b instalar https://github.com/WilkerLopes/AnimatedIcons.git</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Com os arquivos clonados em seu diretório, abra o arquivo que deseja usar os ícones e importe os arquivos, use tamnbém o <code>Jquery</code>, para que todos os códigos funcionem corretamente.</p>
+                <div class="boxCode">
+                    <div class="nameArquivo">
+                        index.html
+                        <div class="btnCopy" onclick="copyToClipboard('#code01')">
+                            <i class="material-icons">
+                                file_copy
+                            </i>
+                        </div>
+                    </div>
+                    <div id="code01" class="editor">
+                        <ol>
+                            <li class="identt1">&lthtml&gt</li>
+                            <li class="identt2">&lthead&gt</li>
+                            <li class="identt3">&lttitle&gtmy_project&lt/title&gt</li>
+                            <li class="identt3">&ltlink rel="stylesheet" href="Plugins/AnimatedIcons/css/animatedIcons.css"&gt</li>
+                            <li class="identt2">&lt/head&gt</li>
+                            <li class="identt2">&ltbody&gt</li>
+                            <li class="identt3">&ltscript src="Plugins/AnimatedIcons/js/animatedIcons.js"&gt&lt/script&gt</li>
+                            <li class="identt3">&ltscript src="https://code.jquery.com/jquery-3.5.0.min.js"&gt&lt/script&gt</li>
+                            <li class="identt2">&lt/body&gt</li>
+                            <li class="identt1">&lt/html&gt</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3 class="title" id="icones"> Iniciando Icones </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa quam, sequi laborum placeat iure tempore ipsum! Incidunt in sequi consectetur quas perspiciatis hic accusamus recusandae, iusto neque laboriosam quisquam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa quam, sequi laborum placeat iure tempore ipsum! Incidunt in sequi consectetur quas perspiciatis hic accusamus recusandae, iusto neque laboriosam quisquam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa quam, sequi laborum placeat iure tempore ipsum! Incidunt in sequi consectetur quas perspiciatis hic accusamus recusandae, iusto neque laboriosam quisquam!</p>
+                <div class="boxCode">
+                    <div class="nameArquivo">
+                        index.html
+                        <div class="btnCopy" onclick="copyToClipboard('#code01')">
+                            <i class="material-icons">
+                                file_copy
+                            </i>
+                        </div>
+                    </div>
+                    <div id="code01" class="editor">
+                        <ol>
+                            <li class="identt1">&lthtml&gt</li>
+                            <li class="identt2">&lthead&gt</li>
+                            <li class="identt3">&lttitle&gtmy_project&lt/title&gt</li>
+                            <li class="identt3">&ltlink rel="stylesheet" href="Plugins/AnimatedIcons/animatedIcons.css"&gt</li>
+                            <li class="identt2">&lt/head&gt</li>
+                            <li class="identt2">&ltbody&gt</li>
+                            <li class="identt3">&ltscript src="src/js/animatedIcons.js"&gt&lt/script&gt</li>
+                            <li class="identt3">&ltscript&gt</li>
+                            <li class="identt4">$(document).ready(function() {</li>
+                            <li class="identt5">$('.animated-icons').animationsIcons("#1c1c1c", "#AA79A6", "#1c1c1c");</li>
+                            <li class="identt4">});</li>
+                            <li class="identt3">&lt/script&gt</li>
+                            <li class="identt2">&lt/body&gt</li>
+                            <li class="identt1">&lt/html&gt</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container spaceBetween">
+                <div class="text">
+                    AnimatedIcons v0.0.2
+                </div>
+                <div class="btns">
+                    <a class="grey-text text-lighten-4 right" href="https://github.com/WilkerLopes" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="grey-text text-lighten-4 right" href="https://www.instagram.com/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class="grey-text text-lighten-4 right" href="mailto:wilkerlopes257@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="src/js/animatedIcons.js"></script>
+    <script src="js/geral.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.animated-icons').animationsIcons("#1c1c1c", "#AA79A6", "#1c1c1c");
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+
+</html>
+
+</html>

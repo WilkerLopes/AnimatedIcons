@@ -1,10 +1,13 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+ :root {
     /* Geral */
     --cor-01: #AA79A6;
     --cor-02: #CBA8C6;
     --cor-03: #80264A;
     --cor-04: #FFF278;
     --cor-05: #4A275D;
+    --dark: #1d1d1d;
+    --ligh: #eeefff;
     /* Bases de Icones */
     --corBase: #000000;
     --corActive: #000000;
@@ -40,7 +43,7 @@ textarea {
     /* 2 */
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     color: var(--cor-02);
 }
 
@@ -64,7 +67,65 @@ textarea {
 /* NavBar */
 
 nav {
-    background-color: var(--cor-01);
+    background-color: var(--ligh);
+    color: var(--dark);
+    color: #4A275D;
+    transition: all 0.35s;
+    overflow: hidden;
+    position: relative;
+}
+
+nav ul.left li a {
+    color: var(--dark);
+}
+
+nav .brand-logo,
+nav ul.right li a {
+    color: var(--dark);
+    transition: all 0.3s;
+    position: relative;
+}
+
+nav ul.right li a.ativo::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--dark);
+}
+
+nav ul.right li a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--dark);
+    transition: all 0.3s;
+}
+
+nav ul.right li:hover a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--dark);
+}
+
+nav.visivel .brand-logo,
+nav.visivel ul.right li a {
+    color: var(--ligh);
 }
 
 .center {
@@ -72,6 +133,13 @@ nav {
     min-height: calc(100vh - 50px - 56px);
     margin: 0 auto;
     padding: 48px 0 32px 0;
+}
+
+.center-doc {
+    height: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0 32px 0;
 }
 
 @media only screen and (min-width: 601px) {
@@ -178,4 +246,259 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .searchButton:hover {
     background: var(--cor-01);
+}
+
+
+/* Documentação */
+
+.banner {
+    background: linear-gradient(75deg, transparent -10%, #03051c 30%), url(../assets/asteroids.jpg);
+    height: 350px;
+    color: var(--ligh);
+    padding: 32px 0;
+    user-select: none;
+}
+
+.banner p {
+    color: var(--ligh);
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.banner p span {
+    background-color: var(--cor-02);
+    padding: 4px 10px;
+    color: red;
+    position: relative;
+}
+
+.banner p span::before {
+    content: "";
+    width: 2px;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    border-right: 2px solid var(--dark);
+    opacity: 1;
+    animation: writePulse 0.6s infinite linear;
+}
+
+@keyframes writePulse {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner .btn {
+    background: var(--cor-01);
+    margin: 4px 32px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.banner .btn:hover {
+    background: var(--cor-02);
+    color: var(--dark);
+    font-weight: 700;
+}
+
+
+/* LADO ESQUERDO */
+
+.ladoEsq {
+    position: relative;
+}
+
+.box-fixed.fixed {
+    position: fixed;
+    width: 20%;
+    top: 82px;
+}
+
+@media only screen and (max-width: 920px) {
+    .box-fixed.fixed {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+/* LADO DIREITO */
+
+.ladoDir pre {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    line-height: 1.2em;
+    user-select: none;
+}
+
+.ladoDir code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+.ladoDir code.terminal::before {
+    content: "$ ";
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    color: #444;
+    margin-right: 8px;
+}
+
+.boxCode {
+    width: 100%;
+    border: 1px solid #03051c;
+}
+
+.boxCode .nameArquivo {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+    font-size: 0.9em;
+    color: #1d1d1d;
+    font-weight: 400;
+    border-bottom: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxCode .nameArquivo .btnCopy {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    color: #000000;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.boxCode .nameArquivo .btnCopy:hover {
+    color: #80264A;
+}
+
+.boxCode .nameArquivo .btnCopy i {
+    font-size: 16px;
+}
+
+.boxCode .editor {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    width: 100%;
+    counter-reset: section;
+    padding: 0;
+    background-color: #23274d;
+    color: #d1d1d1;
+}
+
+.boxCode .editor ol {
+    list-style-type: none;
+    margin: 0;
+    counter-reset: section;
+    position: relative;
+}
+
+.boxCode .editor ol::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background-color: #181b3b;
+}
+
+.boxCode .editor ol li {
+    transition: all 0.1s;
+}
+
+.boxCode .editor ol li::before {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    left: 0;
+    width: 40px;
+    text-align: right;
+    padding-right: 4px;
+    background-color: #181b3b;
+}
+
+.boxCode .editor ol li.terminal::before {
+    content: "$ ";
+    position: absolute;
+    left: 0;
+    width: 40px;
+    text-align: right;
+    padding-right: 4px;
+    background-color: #181b3b;
+}
+
+.boxCode .editor ol li:hover {
+    background-color: #10133a;
+}
+
+.boxCode .editor ol li:hover::before {
+    background-color: #10133a;
+}
+
+
+/* Identty code */
+
+.identt1 {
+    padding-left: 4px;
+}
+
+.identt2 {
+    padding-left: 14px;
+}
+
+.identt3 {
+    padding-left: 28px;
+}
+
+.identt4 {
+    padding-left: 42px;
+}
+
+.identt5 {
+    padding-left: 56px;
+}
+
+.identt6 {
+    padding-left: 70px;
+}
+
+.identt7 {
+    padding-left: 84px;
+}
+
+.identt8 {
+    padding-left: 98px;
+}
+
+.identt9 {
+    padding-left: 112px;
+}
+
+.identt10 {
+    padding-left: 126px;
 }
