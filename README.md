@@ -3,7 +3,7 @@
  <img width=200px height=200px src="assets/Logo_JJ_Gradiente_128.png" alt="Logo"></a>
 </p>
 
-<h3 align="center">Icon Animation</h3>
+<h3 align="center">AnimatedIcons</h3>
 
 <div align="center">
 
