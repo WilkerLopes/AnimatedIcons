@@ -71,7 +71,6 @@ function padZero(str, len) {
             } else if (corActiveInvert != false) {
                 $(":root").css({ "--corActiveInvert": corActiveInvert });
             }
-
             return this.each(function() {
                 var icon = ($(this).text());
                 $(this).html(createIcons(icon)).addClass(icon);
