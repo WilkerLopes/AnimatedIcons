@@ -416,6 +416,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
     padding: 0;
     background-color: #23274d;
     color: #d1d1d1;
+    overflow: auto;
+    max-height: 400px;
 }
 
 .boxCode .editor ol {
