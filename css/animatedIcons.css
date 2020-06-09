@@ -256,7 +256,7 @@
 
 /* Menu-Volta-03 */
 
-.animated-icons.menu-volta-3 .bar1 {
+.animated-icons.menuVolta3 .bar1 {
     position: absolute;
     top: 25%;
     left: 20%;
@@ -266,7 +266,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menu-volta-3 .bar2 {
+.animated-icons.menuVolta3 .bar2 {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -277,7 +277,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menu-volta-3 .bar3 {
+.animated-icons.menuVolta3 .bar3 {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -288,7 +288,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menu-volta-3.active .bar1 {
+.animated-icons.menuVolta3.active .bar1 {
     top: 35%;
     width: 40%;
     left: 20%;
@@ -296,13 +296,13 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.menu-volta-3.active .bar2 {
+.animated-icons.menuVolta3.active .bar2 {
     width: 60%;
     left: 32.5%;
     background-color: var(--corActive);
 }
 
-.animated-icons.menu-volta-3.active .bar3 {
+.animated-icons.menuVolta3.active .bar3 {
     top: 57.5%;
     width: 40%;
     left: 20%;

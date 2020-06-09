@@ -6,6 +6,7 @@ function createIcons(icon) {
     var menuVolta3 = "<div class='boxIcone'><div class='bar1'></div><div class='bar2'></div><div class='bar3'></div></div>";
     var menuFechar = "<div class='boxIcone'><div class='bar1'></div><div class='bar2'></div><div class='bar3'></div></div>";
     var playPausar = "<div class='boxIcone'><div class='bar1'></div><div class='bar2'></div><div class='bar3'></div></div>";
+
     switch (icon) {
         case "engrenagem":
             return engrenagem;
