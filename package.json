@@ -1,0 +1,16 @@
+{
+    "name": "animated-icons",
+    "version": "0.0.2",
+    "description": "Um pacote de ícones animados gratuitos para WEB, em portugues.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/WilkerLopes/IconsAnimation.git"
+    },
+    "author": "Wilker Lopes",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/WilkerLopes/IconsAnimation/issues"
+    },
+    "homepage": "https://github.com/WilkerLopes/IconsAnimation#readme"
+}

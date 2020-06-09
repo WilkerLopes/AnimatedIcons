@@ -1,0 +1,181 @@
+:root {
+    /* Geral */
+    --cor-01: #AA79A6;
+    --cor-02: #CBA8C6;
+    --cor-03: #80264A;
+    --cor-04: #FFF278;
+    --cor-05: #4A275D;
+    /* Bases de Icones */
+    --corBase: #000000;
+    --corActive: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.observe {
+    color: var(--cor-03);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+::-webkit-input-placeholder {
+    color: var(--cor-02);
+}
+
+ ::-moz-placeholder {
+    color: var(--cor-02);
+}
+
+ :-ms-input-placeholder {
+    color: var(--cor-02);
+}
+
+ ::-ms-input-placeholder {
+    color: var(--cor-02);
+}
+
+ ::placeholder {
+    color: #d1d1d1;
+}
+
+
+/* NavBar */
+
+nav {
+    background-color: var(--cor-01);
+}
+
+.center {
+    height: auto;
+    min-height: calc(100vh - 50px - 56px);
+    margin: 0 auto;
+    padding: 48px 0 32px 0;
+}
+
+@media only screen and (min-width: 601px) {
+    .center {
+        min-height: calc(100vh - 50px - 64px);
+    }
+}
+
+.center .icons,
+.center .icons ul#iconsList {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.center h4 {
+    margin: 0;
+}
+
+.hideName {
+    display: none;
+}
+
+.page-footer {
+    background-color: var(--cor-01);
+    padding: 0;
+    margin: 0;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+
+.page-footer a {
+    margin: 0 8px;
+}
+
+
+/* Barra de pesquisa */
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    background-color: rgba(163, 151, 151, 0);
+    border: 3px solid var(--cor-01);
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    outline: none;
+    height: 20px;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 5px;
+    color: var(--cor-03);
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 3px solid var(--cor-01);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.searchTerm:focus {
+    color: var(--cor-01);
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid var(--cor-01);
+    background: var(--cor-01);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton:hover {
+    background: var(--cor-01);
+}

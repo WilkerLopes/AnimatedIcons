@@ -1,0 +1,121 @@
+:root {
+    --corBase: #000000;
+    --corActive: #000000;
+}
+
+.boxIcone {
+    margin: 8px;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* Engrenagem */
+
+#iconsGear path {
+    margin: 4px auto;
+    fill: none;
+    stroke: var(--corBase);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 32px;
+    transition: all 0.35s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+#iconsGear.active path {
+    stroke: var(--corActive);
+    fill: var(--corActive);
+    transform: rotate(90deg);
+}
+
+
+/* Perfil */
+
+#iconsPerfil .circleHead {
+    width: 30%;
+    height: 30%;
+    border: 1.5px solid var(--corBase);
+    margin: 6px auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#iconsPerfil .circleHead::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: var(--corBase);
+    transition: all 0.35s;
+}
+
+#iconsPerfil .circleBody {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    border: 1.5px solid var(--corBase);
+    margin: 2px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#iconsPerfil .circleBody::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: rotate(0);
+    width: 100%;
+    height: 100%;
+    background-color: var(--corBase);
+    transition: all 0.35s;
+}
+
+#iconsPerfil.active .circleHead {
+    border: 1.5px solid var(--corActive);
+}
+
+#iconsPerfil.active .circleHead::before {
+    width: 150%;
+    height: 150%;
+    background-color: var(--corActive);
+}
+
+#iconsPerfil.active .circleBody {
+    border: 1.5px solid var(--corActive);
+}
+
+#iconsPerfil.active .circleBody::before {
+    background-color: var(--corActive);
+    top: 0;
+    transform: rotate(90deg);
+}
+
+
+/* Home */
+
+#iconsHome {}
+
+
+/* Assuntos */
+
+#iconsArtigo {}
+
+
+/* Atividades */
+
+#iconsAtv {}
