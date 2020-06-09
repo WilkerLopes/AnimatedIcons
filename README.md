@@ -8,7 +8,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-ativo-brightgreen.svg)]()
-[![Versão](https://img.shields.io/badge/versão-0.0.2-AA79A6.svg)]()
+[![Versão](https://img.shields.io/badge/versão-0.0.3-AA79A6.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/WilkerLopes/AnimatedIcons.svg)](https://github.com/WilkerLopes/AnimatedIcons/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/WilkerLopes/AnimatedIcons.svg)](https://github.com/WilkerLopes/AnimatedIcons/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
