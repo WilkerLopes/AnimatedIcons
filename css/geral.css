@@ -5,6 +5,9 @@
     --cor-03: #80264A;
     --cor-04: #FFF278;
     --cor-05: #4A275D;
+    /* Bases de Icones */
+    --corBase: #000000;
+    --corActive: #000000;
 }
 
 body {
@@ -83,10 +86,6 @@ nav {
     justify-content: start;
     flex-wrap: wrap;
     overflow: auto;
-}
-
-ul#iconsList li {
-    margin: 4px;
 }
 
 .center h4 {

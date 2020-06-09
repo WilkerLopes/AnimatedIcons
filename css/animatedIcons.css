@@ -172,9 +172,6 @@
     transition: all 0.3s;
 }
 
-
-/* */
-
 .animated-icons.artigo.active .paper {
     border: 1.5px solid var(--corActive);
     background-color: var(--corActive);
@@ -196,4 +193,260 @@
 .animated-icons.artigo.active .paper .LineText:last-child {
     width: 40%;
     background-color: var(--corActiveInvert);
+}
+
+
+/* Menu-Volta-02 */
+
+.animated-icons.menuVolta2 .bar1 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menuVolta2 .bar2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menuVolta2 .bar3 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-100%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menuVolta2.active .bar1 {
+    top: 35%;
+    width: 40%;
+    left: 20%;
+    transform: rotate(-45deg);
+    background-color: var(--corActive);
+}
+
+.animated-icons.menuVolta2.active .bar2 {
+    width: 0;
+    height: 0;
+    left: 32.5%;
+    background-color: var(--corActive);
+}
+
+.animated-icons.menuVolta2.active .bar3 {
+    top: 57.5%;
+    width: 40%;
+    left: 20%;
+    transform: translateY(0) rotate(45deg);
+    background-color: var(--corActive);
+}
+
+
+/* Menu-Volta-03 */
+
+.animated-icons.menu-volta-3 .bar1 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menu-volta-3 .bar2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menu-volta-3 .bar3 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-100%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.menu-volta-3.active .bar1 {
+    top: 35%;
+    width: 40%;
+    left: 20%;
+    transform: rotate(-45deg);
+    background-color: var(--corActive);
+}
+
+.animated-icons.menu-volta-3.active .bar2 {
+    width: 60%;
+    left: 32.5%;
+    background-color: var(--corActive);
+}
+
+.animated-icons.menu-volta-3.active .bar3 {
+    top: 57.5%;
+    width: 40%;
+    left: 20%;
+    transform: translateY(0) rotate(45deg);
+    background-color: var(--corActive);
+}
+
+
+/* Menu-Close */
+
+.animated-icons.menuFechar .bar1 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background-color: var(--corBase);
+    transition: all 0.3s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+.animated-icons.menuFechar .bar2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+.animated-icons.menuFechar .bar3 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    transform: translateY(-100%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+.animated-icons.menuFechar.active .bar1 {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: var(--corActive);
+}
+
+.animated-icons.menuFechar.active .bar2 {
+    width: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: var(--corActive);
+}
+
+.animated-icons.menuFechar.active .bar3 {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: var(--corActive);
+}
+
+
+/* Play-Pause */
+
+.animated-icons.playPausar .bar1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 45%;
+    height: 2px;
+    background-color: var(--corBase);
+    transform: translate(0, -50%) rotate(45deg);
+    transition: all 0.3s;
+    transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+}
+
+.animated-icons.playPausar .bar2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 2px;
+    height: 55%;
+    transform: translateY(-50%);
+    background-color: var(--corBase);
+    transition: all 0.3s;
+}
+
+.animated-icons.playPausar .bar3 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    width: 45%;
+    height: 2px;
+    background-color: var(--corBase);
+    transform: translateY(-50%) rotate(-45deg);
+    transition: all 0.3s;
+    transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+}
+
+.animated-icons.playPausar.active .bar1 {
+    width: 70%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: var(--corActive);
+}
+
+.animated-icons.playPausar.active .bar2 {
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(360deg);
+    height: 0;
+    width: 0;
+    background-color: var(--corActive);
+}
+
+.animated-icons.playPausar.active .bar3 {
+    width: 70%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: var(--corActive);
 }
