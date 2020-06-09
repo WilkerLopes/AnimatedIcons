@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
- :root {
+:root {
     /* Geral */
     --cor-01: #AA79A6;
     --cor-02: #CBA8C6;
@@ -84,6 +84,14 @@ nav ul.right li a {
     color: var(--dark);
     transition: all 0.3s;
     position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+    nav .brand-logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 nav ul.right li a.ativo::before {

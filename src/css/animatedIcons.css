@@ -198,7 +198,7 @@
 
 /* Menu-Volta-02 */
 
-.animated-icons.menuVolta2 .bar1 {
+.animated-icons.menu_voltar_2 .bar1 {
     position: absolute;
     top: 25%;
     left: 20%;
@@ -208,7 +208,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta2 .bar2 {
+.animated-icons.menu_voltar_2 .bar2 {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -219,7 +219,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta2 .bar3 {
+.animated-icons.menu_voltar_2 .bar3 {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -230,7 +230,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta2.active .bar1 {
+.animated-icons.menu_voltar_2.active .bar1 {
     top: 35%;
     width: 40%;
     left: 20%;
@@ -238,14 +238,14 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.menuVolta2.active .bar2 {
+.animated-icons.menu_voltar_2.active .bar2 {
     width: 0;
     height: 0;
     left: 32.5%;
     background-color: var(--corActive);
 }
 
-.animated-icons.menuVolta2.active .bar3 {
+.animated-icons.menu_voltar_2.active .bar3 {
     top: 57.5%;
     width: 40%;
     left: 20%;
@@ -256,7 +256,7 @@
 
 /* Menu-Volta-03 */
 
-.animated-icons.menuVolta3 .bar1 {
+.animated-icons.menu_voltar_3 .bar1 {
     position: absolute;
     top: 25%;
     left: 20%;
@@ -266,7 +266,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta3 .bar2 {
+.animated-icons.menu_voltar_3 .bar2 {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -277,7 +277,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta3 .bar3 {
+.animated-icons.menu_voltar_3 .bar3 {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -288,7 +288,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.menuVolta3.active .bar1 {
+.animated-icons.menu_voltar_3.active .bar1 {
     top: 35%;
     width: 40%;
     left: 20%;
@@ -296,13 +296,13 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.menuVolta3.active .bar2 {
+.animated-icons.menu_voltar_3.active .bar2 {
     width: 60%;
     left: 32.5%;
     background-color: var(--corActive);
 }
 
-.animated-icons.menuVolta3.active .bar3 {
+.animated-icons.menu_voltar_3.active .bar3 {
     top: 57.5%;
     width: 40%;
     left: 20%;
@@ -313,7 +313,7 @@
 
 /* Menu-Close */
 
-.animated-icons.menuFechar .bar1 {
+.animated-icons.menu_fechar .bar1 {
     position: absolute;
     top: 25%;
     left: 20%;
@@ -326,7 +326,7 @@
     -moz-transform-origin: 50% 50%;
 }
 
-.animated-icons.menuFechar .bar2 {
+.animated-icons.menu_fechar .bar2 {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -340,7 +340,7 @@
     -moz-transform-origin: 50% 50%;
 }
 
-.animated-icons.menuFechar .bar3 {
+.animated-icons.menu_fechar .bar3 {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -354,7 +354,7 @@
     -moz-transform-origin: 50% 50%;
 }
 
-.animated-icons.menuFechar.active .bar1 {
+.animated-icons.menu_fechar.active .bar1 {
     width: 50%;
     top: 50%;
     left: 50%;
@@ -362,7 +362,7 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.menuFechar.active .bar2 {
+.animated-icons.menu_fechar.active .bar2 {
     width: 2px;
     top: 50%;
     left: 50%;
@@ -370,7 +370,7 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.menuFechar.active .bar3 {
+.animated-icons.menu_fechar.active .bar3 {
     width: 50%;
     top: 50%;
     left: 50%;
@@ -381,7 +381,7 @@
 
 /* Play-Pause */
 
-.animated-icons.playPausar .bar1 {
+.animated-icons.play_pausar .bar1 {
     position: absolute;
     top: 20%;
     left: 20%;
@@ -395,7 +395,7 @@
     -moz-transform-origin: 0 50%;
 }
 
-.animated-icons.playPausar .bar2 {
+.animated-icons.play_pausar .bar2 {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -406,7 +406,7 @@
     transition: all 0.3s;
 }
 
-.animated-icons.playPausar .bar3 {
+.animated-icons.play_pausar .bar3 {
     position: absolute;
     top: 80%;
     left: 20%;
@@ -420,7 +420,7 @@
     -moz-transform-origin: 0 50%;
 }
 
-.animated-icons.playPausar.active .bar1 {
+.animated-icons.play_pausar.active .bar1 {
     width: 70%;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
@@ -431,7 +431,7 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.playPausar.active .bar2 {
+.animated-icons.play_pausar.active .bar2 {
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%) rotate(360deg);
@@ -440,7 +440,7 @@
     background-color: var(--corActive);
 }
 
-.animated-icons.playPausar.active .bar3 {
+.animated-icons.play_pausar.active .bar3 {
     width: 70%;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;

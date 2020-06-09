@@ -54,11 +54,6 @@ $(document).ready(function() {
 });
 
 
-$(window).scroll(function() {
-    $('.box-fixed').toggleClass('fixed row', $(this).scrollTop() > $('.banner').height());
-});
-
-
 function copyToClipboard(element) {
     var $temp = $("<textarea>");
     var brRegex = /<br\s*[\/]?>/gi;
