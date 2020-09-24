@@ -1,16 +1,50 @@
 {
     "name": "animated-icons",
-    "version": "0.0.2",
-    "description": "Um pacote de ícones animados gratuitos para WEB, em portugues.",
-    "main": "index.js",
+    "version": "1.0.0",
+    "description": "Pacote de icones animados",
+    "main": "dist/js/animate-icons.js",
+    "style": "dist/css/animate-icons.css",
+    "sass": "sass/animate-icons.scss",
+    "scripts": {
+        "dev": "grunt monitor",
+        "test": "grunt travis",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "js/*.js": [
+            "prettier --write",
+            "git add"
+        ]
+    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/WilkerLopes/IconsAnimation.git"
+        "url": "git+https://github.com/WilkerLopes/AnimatedIcons.git"
     },
+    "keywords": [
+        "icons",
+        "icons-pack",
+        "icons animated"
+    ],
     "author": "Wilker Lopes",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/WilkerLopes/IconsAnimation/issues"
+        "url": "https://github.com/WilkerLopes/AnimatedIcons/issues"
     },
-    "homepage": "https://github.com/WilkerLopes/IconsAnimation#readme"
+    "dependencies": {},
+    "devDependencies": {
+        "jquery": "^3.5.0",
+        "node-sass": "^4.14.1",
+        "grunt": "^1.0.1",
+        "grunt-sass": "^2.0.0",
+        "grunt-jquery-builder": "^0.2.1",
+        "prettier": "2.1.2"
+    },
+    "homepage": "https://github.com/WilkerLopes/AnimatedIcons#readme",
+    "files": [
+        "dist",
+        "js/**/*.js",
+        "sass/**/*.scss",
+        "Gruntfile.js",
+        "LICENSE"
+    ]
 }

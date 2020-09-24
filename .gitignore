@@ -1,0 +1,28 @@
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.vs
+.vscode
+.project
+.projectile
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# Node logs
+logs
+*.log
+npm-debug.log*
+
+# grunt-contrib-sass cache
+.sass-cache/
+
+# Dependency directories
+node_modules/
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt

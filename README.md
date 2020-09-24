@@ -1,18 +1,49 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="assets/Logo_JJ_Gradiente_128.png" alt="Logo"></a>
+ <img width=100px height=100px src="assets/Logo_JJ_Gradiente_128.png" alt="Logo"></a>
 </p>
 
 <h3 align="center">AnimatedIcons</h3>
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Platform](https://img.shields.io/badge/platform-reddit-orange.svg)](https://www.reddit.com/user/Wordbook_Bot)
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
 ---
+
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
+
+## About <a name = "about"></a>
+
+Um pacote de icones animados
+
+## Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Node
+Grunt
+Prettier
+
+Para intalar o Grunt e Prettier use:
+
+```
+npm install -g grunt-cli
+npm install --save-dev --save-exact prettier
+
+```
+
+### Installing
+
+Ride o seguinte comando?
+
+```
+npm install
+```
+
+## Usage <a name = "usage"></a>
+
+Add notes about how to use the system.
