@@ -38,7 +38,7 @@ npm install --save-dev --save-exact prettier
 
 ### Installing
 
-Ride o seguinte comando?
+Rode o seguinte comando?
 
 ```
 npm install
@@ -47,3 +47,12 @@ npm install
 ## Usage <a name = "usage"></a>
 
 Add notes about how to use the system.
+
+
+### Minificar arquivos
+
+Para gerar arquivos minficar arquivos(ainda em teste rs)
+
+```
+npm run minify
+```

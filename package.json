@@ -6,9 +6,7 @@
     "style": "dist/css/animate-icons.css",
     "sass": "sass/animate-icons.scss",
     "scripts": {
-        "dev": "grunt monitor",
-        "test": "grunt travis",
-        "precommit": "lint-staged"
+        "minify": "grunt"
     },
     "lint-staged": {
         "js/*.js": [
@@ -32,11 +30,14 @@
     },
     "dependencies": {},
     "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-jshint": "^2.1.0",
+        "grunt-contrib-nodeunit": "^2.1.0",
+        "grunt-contrib-uglify": "^5.0.0",
+        "grunt-jquery-builder": "^0.2.1",
+        "grunt-sass": "^2.0.0",
         "jquery": "^3.5.0",
         "node-sass": "^4.14.1",
-        "grunt": "^1.0.1",
-        "grunt-sass": "^2.0.0",
-        "grunt-jquery-builder": "^0.2.1",
         "prettier": "2.1.2"
     },
     "homepage": "https://github.com/WilkerLopes/AnimatedIcons#readme",
