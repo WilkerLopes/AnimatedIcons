@@ -10,7 +10,6 @@ function createIcons(icon) {
     switch (icon) {
         case "engrenagem":
             return engrenagem;
-            break;
         case "perfil":
             return perfil;
             break;
