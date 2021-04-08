@@ -71,7 +71,7 @@ nav {
     height: auto;
     min-height: calc(100vh - 50px - 56px);
     margin: 0 auto;
-    padding: 48px 0 32px 0;
+    padding: 48px 0 32px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -137,7 +137,7 @@ textarea.materialize-textarea {
     height: 20px;
     width: 100%;
     font-size: 16px;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
     padding: 5px;
     color: var(--cor-03);
 }
